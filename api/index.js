@@ -17,6 +17,7 @@ const swaggerDoc = require('./swagger.json');
 // ROUER
 app.use('/api/user', user);
 app.use('/api/auth', auth);
+
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDoc));
 
 app.use(errors);
